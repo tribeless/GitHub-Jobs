@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({
     extended:true
 }));
 app.use(bodyParser.json());
+
 require("dotenv").config();
 
 app.use(express.static(path.join(__dirname,"public")));
@@ -54,8 +55,6 @@ app.get("/messages",(req,res)=>{
 })
 
 
-app.listen(process.env.HOST, () => {
-    console.log(`app running at localhost ${process.env.HOST}`);
-})
+app.listen(process.env.PORT)
 
 
