@@ -14,7 +14,6 @@ require("dotenv").config();
 
 app.use(express.static(path.join(__dirname,"public")));
 
-let host = process.env.HOST||8080;
 
 
 app.get("/",(req,res)=>{
@@ -55,10 +54,8 @@ app.get("/messages",(req,res)=>{
 })
 
 
-app.listen(host,()=>{
+app.listen(process.env.HOST, () => {
     console.log(`app running at localhost ${host}`);
 })
 
-//https://jobs.github.com/positions.json?search=node
-//https://jobs.github.com/positions.json?description=javascript&location=new+york
 
