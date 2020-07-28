@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: 'Alata',
+  sans-serif;
+}
+/* Container */
+.con{
+  padding: 2rem;
+  text-align: center;
+}
+span{
+  margin:1rem;
+}
+#new{
+ overflow-x: hidden;
+ scroll-behavior: smooth;
+}
+#main{
+ overflow-x: hidden;
+ scroll-behavior: smooth;
+}
+.row{
+ overflow-x: hidden;
+ scroll-behavior: smooth;
+ }
+
+/* Buttons */
+.btn{
+  text-align:center;
+  margin:1rem;
+  color:black;
+}
+.btn-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active{
+  color:#4a148c;
+}
+/* footer */
+.text-center{
+  text-align:center;
+  vertical-align: middle;
+  }
+.page-footer{
+  padding: 2rem;
+}
+.nn.row{
+  margin-bottom: 0;
+}
