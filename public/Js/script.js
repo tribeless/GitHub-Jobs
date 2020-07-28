@@ -1,7 +1,7 @@
    'use strict';
 
    //lets use fetch api
-let DATA_URL = 'http://localhost:8080/messages';
+let DATA_URL = 'https://jobguide.herokuapp.com/messages';
 
 fetch(DATA_URL)
 .then(response=>response.json())
