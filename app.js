@@ -55,7 +55,7 @@ app.get("/messages",(req,res)=>{
 
 
 app.listen(process.env.HOST, () => {
-    console.log(`app running at localhost ${host}`);
+    console.log(`app running at localhost ${process.env.HOST}`);
 })
 
 
